@@ -24,18 +24,20 @@ applyTo: '**/*.cs'
 ## Formatting
 
 - Apply code-formatting style defined in `.editorconfig`.
-- Prefer file-scoped namespace declarations and single-line using directives.
+- Prefer file-scoped namespace declarations and single-line using directives. (e.g `namespace MyNamespace.Folder.ClassName;`)
+- Apply new preferences for C# 13 features (e.g `var list = new();`).
 - Insert a newline before the opening curly brace of any code block (e.g., after `if`, `for`, `while`, `foreach`, `using`, `try`, etc.).
 - Ensure that the final return statement of a method is on its own line.
 - Use pattern matching and switch expressions wherever possible.
+- Use sealed classes to prevent inheritance when not needed.
 - Use `nameof` instead of string literals when referring to member names.
+- Use collections simplification when it is possible (e.g `List<string> list = [];`)
 - Ensure that XML doc comments are created for any public APIs. When applicable, include `<example>` and `<code>` documentation in the comments.
+- Use records for immutable data structures (e.g `record Person(string Name, int Age);`).
 
 ## Project Setup and Structure
 
 - Guide users through creating a new .NET project with the appropriate templates.
-- Explain the purpose of each generated file and folder to build understanding of the project structure.
-- Demonstrate how to organize code using feature folders or domain-driven design principles.
 - Show proper separation of concerns with models, services, and data access layers.
 - Explain the Program.cs and configuration system in ASP.NET Core 9 including environment-specific settings.
 
@@ -84,6 +86,7 @@ applyTo: '**/*.cs'
 - Demonstrate integration with Application Insights for telemetry collection.
 - Show how to implement custom telemetry and correlation IDs for request tracking.
 - Explain how to monitor API performance, errors, and usage patterns.
+- Use the following pattern for the logs creation '[{ClassName}] | [{MethodName}] | [Message]' (e.g. '[{WeatherForecastController}] | [{Get}] | Retrieved weather forecast: {Temperature}')
 
 ## Testing
 
