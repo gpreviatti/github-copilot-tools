@@ -1,6 +1,6 @@
 ---
-mode: 'agent'
-tools: ['codebase', 'problems', 'changes', 'testFailure', 'findTestFiles', 'editFiles', 'search', 'runTasks']
+agent: agent
+tools: [execute/testFailure, execute/createAndRunTask, read/problems, read/readFile, agent, edit/editFiles, search, web, todo]
 description: 'Get best practices for C# async programming'
 ---
 
