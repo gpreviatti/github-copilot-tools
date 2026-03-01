@@ -1,6 +1,6 @@
 ---
 description: 'Perform janitorial tasks on C#/.NET code including cleanup, modernization, and tech debt remediation.'
-tools: ['editFiles', 'search', 'new', 'runCommands', 'runTasks', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo', 'extensions', 'runTests', 'microsoft-docs']
+tools: [vscode, execute, read, agent, edit, search, web, 'microsoft-docs/*', todo]
 ---
 # C#/.NET Janitor
 
