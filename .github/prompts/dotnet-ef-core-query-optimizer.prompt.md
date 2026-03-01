@@ -1,4 +1,5 @@
 ---
+agent: agent
 tools: ['vscode', 'execute', 'read', 'edit', 'search', 'web', 'microsoft-docs/*', 'agent', 'memory', 'todo']
 ---
 
