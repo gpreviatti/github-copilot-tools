@@ -1,4 +1,5 @@
 ---
+name: create-conventional-commit
 description: 'Generate a Conventional Commit message from user-provided details.'
 ---
 
